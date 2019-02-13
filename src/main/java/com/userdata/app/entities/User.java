@@ -1,5 +1,6 @@
 package com.userdata.app.entities;
 
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 
 public class User {
@@ -7,6 +8,7 @@ public class User {
     private long id;
     
     @NotBlank(message = "Email is mandatory")
+    @Email
     private String email;
     
     private String startTime;
